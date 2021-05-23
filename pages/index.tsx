@@ -1,3 +1,5 @@
+import HomeComponent from '../src/components/home';
+
 export default function Home() {
-  return <div>Welcome to Ecommerce App</div>;
+  return <HomeComponent />;
 }
