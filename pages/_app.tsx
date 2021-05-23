@@ -1,6 +1,7 @@
+import { ThemeProvider } from '@material-ui/styles';
 import { ComponentType } from 'react';
 import { createStore } from '../src/redux/store';
-import '../styles/globals.css';
+import MuiTheme from '../styles/muiTheme';
 
 function App({
   Component,
@@ -9,7 +10,11 @@ function App({
   Component: ComponentType;
   pageProps: Record<string, unknown>;
 }) {
-  return <Component {...pageProps} />;
+  return (
+    <ThemeProvider theme={MuiTheme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
 
 export default createStore().withRedux(App);
