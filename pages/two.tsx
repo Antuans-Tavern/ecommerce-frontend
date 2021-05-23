@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { useDispatch } from "react-redux";
-import { test } from "../src/redux/actions/userActions";
+import Link from 'next/link';
+import { useDispatch } from 'react-redux';
+import { test } from '../src/redux/actions/userActions';
 
 export default function Two() {
   const dispatch = useDispatch();
@@ -10,7 +10,7 @@ export default function Two() {
       <button onClick={() => dispatch(test())}>asdasd</button>
       <p>Hello whore</p>
       <Link href="/">
-        <a>back</a>
+        <a href="/">back</a>
       </Link>
     </div>
   );

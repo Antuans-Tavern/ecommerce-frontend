@@ -1,7 +1,14 @@
-import { createStore } from "../src/redux/store";
-import "../styles/globals.css";
+import { ComponentType } from 'react';
+import { createStore } from '../src/redux/store';
+import '../styles/globals.css';
 
-function App({ Component, pageProps }) {
+function App({
+  Component,
+  pageProps,
+}: {
+  Component: ComponentType;
+  pageProps: Record<string, unknown>;
+}) {
   return <Component {...pageProps} />;
 }
 
