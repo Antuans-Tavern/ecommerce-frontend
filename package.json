@@ -9,11 +9,14 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest --watch",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test:ci": "jest"
   },
   "dependencies": {
+    "@apollo/client": "^3.3.19",
     "@material-ui/core": "^4.11.4",
     "@reduxjs/toolkit": "^1.5.1",
+    "graphql": "^15.5.0",
     "next": "^10.2.0",
     "next-redux-wrapper": "^6.0.2",
     "react": "^17.0.2",
@@ -23,9 +26,9 @@
   "devDependencies": {
     "@babel/core": "^7.14.2",
     "@storybook/addon-actions": "^6.2.9",
-    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.2.9",
-    "@storybook/react": "^6.2.9",
+    "@storybook/react": "^6.1.21",
     "@testing-library/dom": "^7.31.0",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
